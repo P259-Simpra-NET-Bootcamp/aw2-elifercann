@@ -1,6 +1,5 @@
 ﻿using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using Repositories.EfCore.Config;
 using static Entities.Models.Staff;
 
 namespace Repositories.Context
@@ -19,7 +18,6 @@ namespace Repositories.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new StaffConfiguration());
-            modelBuilder.ApplyConfiguration(new StaffConfig());
             base.OnModelCreating(modelBuilder);
         }
 

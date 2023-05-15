@@ -1,5 +1,4 @@
 ﻿using Entities.Models;
-using Microsoft.EntityFrameworkCore;
 using Repositories.Abstract;
 using Services.Abstract;
 

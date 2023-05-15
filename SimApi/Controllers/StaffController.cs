@@ -1,6 +1,4 @@
 ﻿using Entities.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Abstract;
 using Services.Validation;
@@ -72,22 +70,7 @@ namespace SimApi.Controllers
                 throw new Exception(ex.Message);
             }
         }
-        [HttpGet("emails")]
-        public IActionResult GetEmails(string email)
-        {
-            try
-            {
-                var list = _manager.StaffService.GetStaffEmail(email);
-                if (list.Count == 0)
-                    return NotFound($"Staff with email:{email} could not found.");
-                return Ok(list);
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
-        }
+      
 
         [HttpPost]
         public IActionResult CreateOneStaff([FromBody] Staff staff)
