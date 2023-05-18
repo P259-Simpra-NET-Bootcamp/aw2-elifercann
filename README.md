@@ -57,4 +57,4 @@ Email alanini unique olmalidir.
 -SimApi katmanında api tasarlandı.ContextFactory klasöründe context sınıfının konfigürasyonu yapıldı.Farklı bir kullanım olduğundan tercih edildi.Controllers klasöründe Get,put,post,delete işlemleri tanımladı.Extensions klasöründe servis konfigürasyonları yazıldı sonrasında hepsi Startup.cs klasöründe implement edildi.
 
 
--Mevcut sisteminizde projenin çalışabilmesi için appsettings.json dosyasında veri tabanı bağlantınızı kendi server uzantınız olarak değiştirmelisiniz sonrasında veri tabanı işlemlerinin yansıtılması için migration klasörünü silip add-migraiton komutunu çalıştırmalısınız.Migrations klasörü oluşturulduktan sonra çalıştırıp metotları test edebilirsiniz.
+-Mevcut sisteminizde projenin çalışabilmesi için appsettings.json dosyasında veri tabanı bağlantınızı kendi server uzantınız olarak değiştirmelisiniz sonrasında veri tabanı işlemlerinin yansıtılması için migration klasörünü silip add-migraiton komutunu çalıştırmalısınız.Ardından veri tabanına yansıması için de update-database komutunu çalıştırmalısınız.Migrations klasörü oluşturulduktan sonra çalıştırıp metotları test edebilirsiniz.
