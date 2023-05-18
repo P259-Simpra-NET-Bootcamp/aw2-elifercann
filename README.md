@@ -44,8 +44,17 @@ Email alanini unique olmalidir.
     }
 ```
 Ödev Açıklaması
+
 -Tek bir sınıf olan Staff sınıfı için base sınıfı oluşturulmadı projede sınıflar arttıkça basemodel implement edilecek, entities katmanı içinde model klasörünün altında sınıf tanımı ve veri tabanında tablo oluşturulurken propertylerin hangi özelliklerde olacağı kodlandı.
+
+
 -Projede repository yapısı kullanıldı.Repositories katmanında abstract klasöründe implement edilecek metotlar kodlandı.Context klasöründe veri tabanı sınıfı oluşturulup config dosyaları içerisinde tanımlandı.EfCore klasöründe repositorymanager ve repositorybase sınıflarında ortak işlemler kodlandı(crud fonksiyonları).StaffRepository sınıfında staff sınıfı için gerekli işlemler kodlandı.Bu katmana migration işlemi yapıldı.İnitial migration dosyası mevcuttur.
+
+
 -Services katmanında abstract,concrete ve validation klasörleri bulunuyor.Repository katmanından direkt nesneye erişim yapılmasın servis üzerinden işlemler gerçekleştirilmesi için bu servis katmanı oluşturuldu.Doğrulama işlemi validation klasörü içersinde tanımlandı.
+
+
 -SimApi katmanında api tasarlandı.ContextFactory klasöründe context sınıfının konfigürasyonu yapıldı.Farklı bir kullanım olduğundan tercih edildi.Controllers klasöründe Get,put,post,delete işlemleri tanımladı.Extensions klasöründe servis konfigürasyonları yazıldı sonrasında hepsi Startup.cs klasöründe implement edildi.
+
+
 -Mevcut sisteminizde projenin çalışabilmesi için appsettings.json dosyasında veri tabanı bağlantınızı kendi server uzantınız olarak değiştirmelisiniz sonrasında veri tabanı işlemlerinin yansıtılması için migration klasörünü silip add-migraiton komutunu çalıştırmalısınız.Migrations klasörü oluşturulduktan sonra çalıştırıp metotları test edebilirsiniz.
